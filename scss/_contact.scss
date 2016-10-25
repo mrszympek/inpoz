@@ -1,0 +1,8 @@
+.contact {
+  background-color: #ffffff;
+  padding: $box-padding-mobile;
+  @include mq(tablet){
+    padding: $box-padding;
+
+  }
+}

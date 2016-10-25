@@ -1,0 +1,27 @@
+.offer {
+  padding: $box-padding-mobile;
+  background-color: #eaeaea;
+  //color: #ffffff;
+
+  @include mq(tablet) {
+    padding: $box-padding;
+  }
+
+  ul {
+    padding-top: 50px;
+    @include mq(tablet) {
+      columns: 2;
+    }
+    li {
+      margin-left: 18%;
+      padding: 8px 16px 8px 8px;
+
+      @include mq(tablet) {
+        font-size: 19px;
+      }
+      @include mq(desktop) {
+        font-size: 16px;
+      }
+    }
+  }
+}

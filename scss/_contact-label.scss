@@ -1,0 +1,189 @@
+.contact-label {
+  display: block;
+
+  @include mq(tablet){
+    padding-top: 40px;
+
+  }
+
+  .left-column {
+    margin: 30px 0;
+    @include mq(tablet) {
+      float: left;
+      border-right: 2px solid #979797;
+
+    }
+
+    @include mq(tablet) {
+      width: calc(50% - 120px);
+      padding: 0 60px;
+    }
+
+    textarea {
+      text-align: center;
+      margin: 10px 0;
+      height: 210px;
+      font-size: 16px;
+      padding-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+      width: 100%;
+    }
+
+    .inputs {
+      width: 100%;
+      float: left;
+      text-align: center;
+
+      .contact-input {
+        margin: 10px 0;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+
+      }
+      .submit {
+        margin-top: 20px;
+        width: 220px;
+        height: 70px;
+        font-size: 16px;
+        border-radius: 5px;
+        //border: 5px solid #cccccc;
+        //background-color: #2D4059;
+        background-color: #ff5722;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        &:hover {
+          //background-color: ;
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+
+  .right-column {
+
+    @include mq(tablet) {
+      float: right;
+      width: calc(50% - 5px);
+      margin: 30px 0;
+    }
+
+    @include mq(desktop){
+      //width: 30%;
+    }
+
+    .adres {
+      h2 {
+        text-align: center;
+        
+      }
+
+      p {
+        line-height: 1.8;
+        margin-top: 10px;
+        text-align: center;
+
+        @include mq(tablet) {
+        }
+        @include mq(tablet) {
+          //text-align: none;
+          font-size: 20px;
+          line-height: 1.6;
+        }
+      }
+    }
+    .contact-data {
+      margin-top: 40px;
+
+      @include mq(tablet){
+        margin-top: 65px;
+      }
+
+      @include mq(desktop){
+        margin-top: 50px;
+      }
+      dl {
+        line-height: 1.6;
+        margin: 20px 50px;
+
+        @include mq(tablet) {
+        }
+        @include mq(desktop) {
+          line-height: 1.6;
+          font-size: 20px;
+
+        }
+      }
+
+      dt {
+        float: left;
+        width: 60px;
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+.circles {
+  margin-top: 40px;
+  display: flex;
+
+  @include mq(tablet){
+    margin-top: 65px;
+  }
+  @include mq(desktop){
+    margin-top: 50px;
+  }
+
+  ul
+  {
+    display: flex;
+    margin: 0 auto;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 10px;
+      border-radius: 50%;
+      border: 2px solid #FF5722;
+
+      a {
+        text-decoration: none;
+
+        i {
+          color: #FF5722;
+          font-size: 30px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+
+          height: 60px;
+          width: 60px;
+
+          &, &:hover, &:active {
+            text-decoration: none;
+
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+

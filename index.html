@@ -5,11 +5,195 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.1/css/simple-line-icons.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/scroll-menu.js"></script>
+
+
 </head>
 <body>
 
-<script src="js/default.js"></script>
+<div class="menu">
+    <div class="logo">
+        <a href="#"><img src="img/Fire-Extinguishers.png" alt=""></a>
+    </div>
 
+    <div class="menu-buttons">
+        <ul>
+            <li><a href="#about" onclick="scroll_to('#about');">O nas</a></li>
+            <li><a href="#offer" onclick="scroll_to('#offer');">oferta</a></li>
+            <li><a href="#contact" onclick="scroll_to('#contact');">kontakt</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="top">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/fireman.jpg"></div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur mus amet dolor error expedita </p>
+    </div>
+    <div class="layout"></div>
+</div>
+
+<div class="about" id="about">
+    <div class="header">
+        <h2>KIM JESTEŚMY</h2>
+    </div>
+    <div class="wrap">
+        <div class="first">
+            <p>Firma M A K - P O Ż powstała z połączenia dwóch firm, działających na rynku usług ochrony
+                przeciwpożarowej od
+                kilkunastu lat. Filarem naszej ykonania prac montażowych i zabezpieczeniowych a skończywszy na:
+                wyposażeniu
+                w gaśnice, hydranty, znaki, przygotowaniu dokumentacji odbiorowej, obsłudze serwisowej instalacji ppoż.,
+                szkoleń technicznych, prowadzeniu stałego nadzoru z zakresu ochrony przeciwpożarowej obiektu.</p>
+        </div>
+
+        <div class="second" style="display: none">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur delectus itaque quis
+                veniam. Consequatur debitis expedita facere fugiat id impedit in nam, odit quod quos rem sunt vel
+                voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, blanditiis dignissimos
+                esse est fugiat impedit laborum provident quas recusandae repellendus reprehenderit saepe vel,
+                voluptatum? Cum esse non quo rem! Ad?</p>
+        </div>
+
+    </div>
+
+    <div class="circle">
+        <i class="icon-arrow-down"></i>
+    </div>
+</div>
+
+
+<div class="futures">
+    <div class="header">
+        <h2>CO NAS WYRÓŻNIA</h2>
+    </div>
+    <div class="boxes">
+        <div class="box">
+            <i class="icon-star"></i>
+            <h2>SZYBKA PRACA</h2>
+            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos
+                dolore eius ipsum iste labore, necessitatibus nesciunt nisi amet, consectetur adipisicing elit. Eius eum
+                saepe temporibus </p>
+        </div>
+        <div class="box">
+            <i class="icon-organization"></i>
+            <h2>SZYBKA PRACA</h2>
+            <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos
+                dolore eius ipsum iste labore, necessitatibus nesciunt nisi amet, consectetur adipisicing elit. Eius eum
+                saepe temporibus </p>
+        </div>
+        <div class="box">
+            <i class="icon-wrench"></i>
+            <h2>SZYBKA PRACA</h2>
+            <p>LLorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dignissimos
+                dolore eius ipsum iste labore, necessitatibus nesciunt nisi amet, consectetur adipisicing elit. Eius eum
+                saepe temporibus </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="offer" id="offer">
+    <div class="header"><h2>CO OFERUJEMY</h2></div>
+    <ul>
+        <li>Uzgadnianie dokumentacji przez Rzeczoznawcę ds. zabezpieczeń ppoż.</li>
+        <li>Instrukcje, Ekspertyzy, Oceny bezpieczeństwa pożarowego</li>
+        <li>Prowadzenie spraw ppoż. w obiektach</li>
+        <li>Systemy sygnalizacji pożaru (projektowanie, wykonawstwo, nadzór)</li>
+        <li>Systemy oddymiania</li>
+        <li>Dźwiękowe systemy ostrzegawcze</li>
+        <li>Zabezpieczenia ogniochronne konstrukcji stalowych</li>
+        <li>Zabezpieczenia ogniochronne przejść kablowych</li>
+        <li>Drzwi ppoż. stalowe, drewniane, pełne, przeszklone</li>
+        <li>Oświetlenie ewakuacyjne</li>
+        <li>Badania wydajności hydrantów</li>
+        <li>Badania węży hydrantowych na maksymalne ciśnienie</li>
+        <li>Znaki ppoż. i ewakuacyjne</li>
+        <li>Gaśnice, Hydranty</li>
+    </ul>
+</div>
+
+<div class="contact" id="contact">
+
+    <div class="header1">
+        <h2>SKONTAKTUJ SIĘ Z NAMI</h2>
+        <p>LUB ODWIEDŹ NAS OSOBIŚCIE</p>
+    </div>
+    <div class="hr"></div>
+
+
+    <div class="contact-label">
+
+
+        <div class="left-column">
+            <textarea class=contact-area" name="message" cols="30" rows="10"
+                      placeholder="Napisz wiadomość..."></textarea>
+            <div class="inputs">
+                <form method="post" action="kontakt.php" class="contact-form">
+                    <input class="contact-input" type="text" name="name" placeholder="Podaj imię i nazwisko" required>
+                    <input class="contact-input" type="email" name="email" placeholder="Podaj adres e-mail" required>
+                    <input class="submit" name="submit" type="submit" value="Wyślij">
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="adres">
+                <h2>Dane kontaktowe</h2>
+                <p>Inpoz sp.zoo <br> Andrzej Kucharczyk <br> ul. Wislana 54 <br> Łodygowice 34-234</p>
+            </div>
+            <div class="contact-data">
+                <dl>
+                    <dt>tel:</dt>
+                    <dd> 812 123 123</dd>
+
+                    <dt>fax:</dt>
+                    <dd>818 010 091</dd>
+
+                    <dt>kom:</dt>
+                    <dd>123 123 123</dd>
+
+                    <dt>mail:</dt>
+                    <dd>adasd@opad.pl</dd>
+
+                </dl>
+            </div>
+
+            <div class="circles">
+                <ul>
+                    <li><a href="696234543"><i class="icon-phone"></i></li>
+                    </a>
+                    <li><a href=""><i class="icon-map"></i></a></li>
+                    <li><a href=""><i class="icon-envelope"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+<div class="footer">
+    <p>INPOZ - Copyright 2016 &copy</p>
+</div>
 
 </body>
 </html>

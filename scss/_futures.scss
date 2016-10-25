@@ -1,0 +1,53 @@
+.futures {
+  background-color: #ffffff;
+  padding: $box-padding-mobile;
+  @include mq(tablet){
+    padding: $box-padding;
+
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+
+
+    @include mq(desktop){
+      padding-top: 50px;
+      flex-direction: row;
+    }
+
+
+    .box {
+      text-align: center;
+      padding: 30px 0;
+
+      @include mq(tablet){
+        padding: 50px 80px;
+      }
+
+      @include mq(desktop){
+        padding: 0 80px;
+      }
+
+
+      i{
+        font-size: 100px;
+      }
+
+      img {
+        height: 80px;
+        @include mq(tablet){
+          height: 100%;
+        }
+      }
+
+      h2 {
+        padding: 25px;
+      }
+
+      p {
+        line-height: 1.8;
+      }
+    }
+  }
+}
