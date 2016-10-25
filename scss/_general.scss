@@ -69,19 +69,18 @@ body {
   width: 50px;
   border-radius: 50px;
   content: '';
-  background-color: #cccccc;
+  background-color: #ff5722;
   position: absolute;
   margin-top: 15px;
   left: calc(50% - 24.5px);
 
-  @include mq(tablet) {
-  }
 
   @include mq(desktop) {
     margin-top: 55px;
   }
 
   .icon-arrow-down {
+    color: #ffffff;
     position: absolute;
     margin-top: 10px;
     left: 19%;
