@@ -28,6 +28,7 @@
       border-radius: 5px;
       box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
       width: 100%;
+      -webkit-appearance: none;
     }
 
     .inputs {
@@ -36,6 +37,7 @@
       text-align: center;
 
       .contact-input {
+        -webkit-appearance: none;
         margin: 10px 0;
         height: 50px;
         width: 100%;
@@ -46,6 +48,7 @@
 
       }
       .submit {
+        -webkit-appearance: none;
         margin-top: 20px;
         width: 220px;
         height: 70px;

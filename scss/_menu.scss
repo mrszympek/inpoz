@@ -45,14 +45,20 @@
   position: fixed;
   width: 100%;
   z-index: 99999;
-  box-shadow: 0px 0.5px 5px 0px rgba(0,0,0,0.75);
-
+  box-shadow: 0px 0.5px 5px 0px rgba(0, 0, 0, 0.75);
 
   .logo {
-    padding-left: 100px;
-    height: 75px;
-    width: 150px;
-    float: left;;
+    float: left;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+
+    @include mq(desktop) {
+      padding: inherit;
+      padding-left: 100px;
+      height: 75px;
+      width: 150px;
+    }
 
     img {
       height: 100%;
@@ -62,14 +68,30 @@
   }
 
   .menu-buttons {
-    padding-right: 100px;
     float: right;
+
+    @include mq(desktop) {
+      padding-right: 100px;
+      line-height: 75px;
+    }
+
     ul {
-      list-style: none;
+      line-height: 50px;
       display: inline-flex;
+      list-style: none;
+
+      @include mq(desktop) {
+        line-height: 0;
+      }
+
       li {
-        padding: 20px;
+        align-self: center;
         margin: 10px;
+
+        @include mq(desktop) {
+          padding: 20px;
+        }
+
         a {
           text-transform: uppercase;
           color: black;
