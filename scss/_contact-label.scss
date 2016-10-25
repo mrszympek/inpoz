@@ -178,12 +178,13 @@
 
     }
 
-    ::after {
-      content: "";
-      clear: both;
-      display: block;
-    }
   }
+}
+
+.contact-label::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 
