@@ -71,6 +71,10 @@
     float: right;
     font-size: 12px;
 
+    @include mq(tablet){
+      font-size: 16px;
+    }
+
     @include mq(desktop) {
       font-size: inherit;
       padding-right: 100px;
