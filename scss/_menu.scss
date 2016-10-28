@@ -1,45 +1,3 @@
-//.menu{
-//  line-height: 100px;
-//  margin: 50px;
-//  z-index: 10000;
-//  position: absolute;
-//  top: 0;
-//  right: 0;
-//  left: 0;
-//  bottom: 0;
-//
-//  @include mq(tablet){
-//    //display: block;
-//  }
-//
-//
-//    ul{
-//      display: none;
-//      float: left;
-//
-//      @include mq(tablet){
-//        display: block;
-//        width: 70%;
-//        margin-left: 250px;
-//      }
-//
-//      @include mq(desktop){
-//        display: block;
-//        margin-left: 350px;
-//      }
-//
-//    li{
-//      display: inline-block;
-//      a{
-//        padding: 40px;
-//        font-size: 24px;
-//        text-decoration: none;
-//        color: #ffffff;
-//      }
-//    }
-//  }
-//}
-
 .menu {
   background-color: #eeeeee;
   position: fixed;
@@ -56,8 +14,8 @@
     @include mq(desktop) {
       padding: 5px;
       padding-left: 100px;
-      height: 75px;
-      width: 150px;
+      //height: 50px;
+      //width: 150px;
     }
 
     img {
@@ -78,7 +36,6 @@
     @include mq(desktop) {
       font-size: inherit;
       padding-right: 100px;
-      line-height: 85px;
     }
 
     ul {
@@ -87,7 +44,7 @@
       list-style: none;
 
       @include mq(desktop) {
-        line-height: 0;
+        line-height: 0px;
       }
 
       li {
